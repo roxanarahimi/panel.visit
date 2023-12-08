@@ -75,7 +75,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js":
 /*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/BrandCreate.vue?vue&type=script&lang=js ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js ***!
   \*********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -498,7 +498,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/BrandCreate.vue?vue&type=template&id=40320e76 ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76 ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1008,7 +1008,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\ndiv[data-v-478ac5c6]{\r\n       z-in
 
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -1043,7 +1043,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_use_1_vue_loader_dist_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_default_css_vue_type_style_index_0_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../vue-loader/dist/stylePostLoader.js!../../../postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./default.css?vue&type=style&index=0&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/@vueform/multiselect/themes/default.css?vue&type=style&index=0&lang=css");
 
-
+            
 
 var options = {};
 
@@ -1072,7 +1072,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Loader_sm_vue_vue_type_style_index_0_id_478ac5c6_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Loader-sm.vue?vue&type=style&index=0&id=478ac5c6&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/components/Loader-sm.vue?vue&type=style&index=0&id=478ac5c6&scoped=true&lang=css");
 
-
+            
 
 var options = {};
 
@@ -1089,7 +1089,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1099,9 +1099,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
 
-
+            
 
 var options = {};
 
@@ -1175,7 +1175,7 @@ if (false) {}
 
 /***/ "./resources/js/components/panel/product/ProductCreate.vue":
 /*!*****************************************************************!*\
-  !*** ./resources/js/components/panel/product/BrandCreate.vue ***!
+  !*** ./resources/js/components/panel/product/ProductCreate.vue ***!
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1183,10 +1183,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BrandCreate.vue?vue&type=template&id=40320e76 */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76");
-/* harmony import */ var _ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BrandCreate.vue?vue&type=script&lang=js */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js");
+/* harmony import */ var _ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductCreate.vue?vue&type=template&id=40320e76 */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76");
+/* harmony import */ var _ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductCreate.vue?vue&type=script&lang=js */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js");
 /* harmony import */ var _vueform_multiselect_themes_default_css_vue_type_style_index_0_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @vueform/multiselect/themes/default.css?vue&type=style&index=0&lang=css */ "./node_modules/@vueform/multiselect/themes/default.css?vue&type=style&index=0&lang=css");
-/* harmony import */ var _ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
+/* harmony import */ var _ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
 /* harmony import */ var F_PROJECTS_2023_visit_panel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
@@ -1196,7 +1196,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const __exports__ = /*#__PURE__*/(0,F_PROJECTS_2023_visit_panel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/panel/product/BrandCreate.vue"]])
+const __exports__ = /*#__PURE__*/(0,F_PROJECTS_2023_visit_panel_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/panel/product/ProductCreate.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -1216,7 +1216,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BtnSubmit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BtnSubmit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BtnSubmit.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/components/BtnSubmit.vue?vue&type=script&lang=js");
-
+ 
 
 /***/ }),
 
@@ -1231,13 +1231,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Loader_sm_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Loader_sm_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Loader-sm.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/components/Loader-sm.vue?vue&type=script&lang=js");
-
+ 
 
 /***/ }),
 
 /***/ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************!*\
-  !*** ./resources/js/components/panel/product/BrandCreate.vue?vue&type=script&lang=js ***!
+  !*** ./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js ***!
   \*****************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1245,8 +1245,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandCreate.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js");
-
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProductCreate.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=script&lang=js");
+ 
 
 /***/ }),
 
@@ -1282,7 +1282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76":
 /*!***********************************************************************************************!*\
-  !*** ./resources/js/components/panel/product/BrandCreate.vue?vue&type=template&id=40320e76 ***!
+  !*** ./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76 ***!
   \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1290,7 +1290,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandCreate.vue?vue&type=template&id=40320e76 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_template_id_40320e76__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProductCreate.vue?vue&type=template&id=40320e76 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=template&id=40320e76");
 
 
 /***/ }),
@@ -1321,12 +1321,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css":
 /*!*************************************************************************************************************!*\
-  !*** ./resources/js/components/panel/product/BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
+  !*** ./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css ***!
   \*************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader/dist/cjs.js!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BrandCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_ProductCreate_vue_vue_type_style_index_1_id_40320e76_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader/dist/cjs.js!../../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/panel/product/ProductCreate.vue?vue&type=style&index=1&id=40320e76&lang=css");
 
 
 /***/ }),
@@ -1364,7 +1364,7 @@ function useData (props, context, dep)
     // Setting object(s) as internal value
     iv.value = makeInternal(val);
 
-    // Setting object(s) or plain value as external
+    // Setting object(s) or plain value as external 
     // value based on `option` setting
     const externalVal = makeExternal(val);
 
@@ -1374,7 +1374,7 @@ function useData (props, context, dep)
       context.emit('input', externalVal);
       context.emit('update:modelValue', externalVal);
     }
-  };
+  }; 
 
   // no export
   const makeExternal = (val) => {
@@ -1492,7 +1492,7 @@ function useSearch (props, context, dep)
       if (typeof regexp === 'string') {
         regexp = new RegExp(regexp);
       }
-
+      
       if (!pastedData.split('').every(c => !!c.match(regexp))) {
         e.preventDefault();
       }
@@ -1580,7 +1580,7 @@ function arraysEqual (array1, array2) {
 
 function useOptions (props, context, dep)
 {
-  const {
+  const { 
     options, mode, trackBy: trackBy_, limit, hideSelected, createTag, createOption: createOption_, label,
     appendNewTag, appendNewOption: appendNewOption_, multipleLabel, object, loading, delay, resolveOnLoad,
     minChars, filterResults, clearOnSearch, clearOnSelect, valueProp, allowAbsent, groupLabel,
@@ -1820,7 +1820,7 @@ function useOptions (props, context, dep)
   // =============== METHODS ==============
 
   /**
-   * @param {array|object|string|number} option
+   * @param {array|object|string|number} option 
    */
   const select = (option) => {
     if (typeof option !== 'object') {
@@ -1908,7 +1908,7 @@ function useOptions (props, context, dep)
     if (max === undefined || max.value === -1 || (!hasSelected.value && max.value > 0)) {
       return false
     }
-
+    
     return iv.value.length >= max.value
   };
 
@@ -1922,7 +1922,7 @@ function useOptions (props, context, dep)
       delete option.__CREATE__;
 
       option = onCreate.value(option, $this);
-
+      
       if (option instanceof Promise) {
         resolving.value = true;
         option.then((result) => {
@@ -1931,7 +1931,7 @@ function useOptions (props, context, dep)
         });
 
         return
-      }
+      } 
     }
 
     handleOptionSelect(option);
@@ -1942,7 +1942,7 @@ function useOptions (props, context, dep)
       option = { ...option };
       delete option.__CREATE__;
     }
-
+    
     switch (mode.value) {
       case 'single':
         if (option && isSelected(option)) {
@@ -2133,7 +2133,7 @@ function useOptions (props, context, dep)
 
   // no export
   const filterGroups = (groups) => {
-    // If the search has value we need to filter among
+    // If the search has value we need to filter among 
     // the ones that are visible to the user to avoid
     // displaying groups which technically have options
     // based on search but that option is already selected.
@@ -2148,7 +2148,7 @@ function useOptions (props, context, dep)
   // no export
   const filterOptions = (options, excludeHideSelected = true) => {
     let fo = options;
-
+    
     if (search.value && filterResults.value) {
       let filter = searchFilter.value;
 
@@ -2175,7 +2175,7 @@ function useOptions (props, context, dep)
   // no export
   const optionsToArray = (options) => {
     let uo = options;
-
+    
     // Transforming an object to an array of objects
     if (isObject(uo)) {
       uo = Object.keys(uo).map((key) => {
@@ -2336,7 +2336,7 @@ function useOptions (props, context, dep)
 
     initInternalValue();
   }
-
+  
   // ============== WATCHERS ==============
 
   if (delay.value > -1) {
@@ -2484,7 +2484,7 @@ function usePointer (props, context, dep)
 
     return prevGroup
   });
-
+  
   const nextGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
     let nextIndex = groups.value.map(g => g.label).indexOf(isPointerGroup.value
       ? pointer.value[groupLabel.value]
@@ -2500,7 +2500,7 @@ function usePointer (props, context, dep)
   const lastGroup = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
     return [...groups.value].slice(-1)[0]
   });
-
+  
   const currentGroupFirstEnabledOption = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
     return pointer.value.__VISIBLE__.filter(o => !o[disabledProp.value])[0]
   });
@@ -2509,7 +2509,7 @@ function usePointer (props, context, dep)
     const options = currentGroup.value.__VISIBLE__.filter(o => !o[disabledProp.value]);
     return options[options.map(o => o[valueProp.value]).indexOf(pointer.value[valueProp.value]) - 1]
   });
-
+  
   const currentGroupNextEnabledOption = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
     const options = getParentGroup(pointer.value).__VISIBLE__.filter(o => !o[disabledProp.value]);
     return options[options.map(o => o[valueProp.value]).indexOf(pointer.value[valueProp.value]) + 1]
@@ -2650,7 +2650,7 @@ function usePointer (props, context, dep)
     if (pointedOption.offsetTop + pointedOption.offsetHeight > wrapper.clientHeight + wrapper.scrollTop) {
       wrapper.scrollTop = pointedOption.offsetTop + pointedOption.offsetHeight - wrapper.clientHeight;
     }
-
+    
     if (pointedOption.offsetTop < wrapper.scrollTop) {
       wrapper.scrollTop = pointedOption.offsetTop;
     }
@@ -2677,7 +2677,7 @@ function usePointer (props, context, dep)
       }
 
       let wrapper = firstSelected.parentElement.parentElement;
-
+      
       (0,vue__WEBPACK_IMPORTED_MODULE_0__.nextTick)(() => {
         /* istanbul ignore next */
         if (wrapper.scrollTop > 0) {
@@ -2752,7 +2752,7 @@ function useMultiselect (props, context, dep)
   // ================ DATA ================
 
   const multiselect = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
-
+  
   const wrapper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
 
   const tags = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
@@ -2835,7 +2835,7 @@ function useMultiselect (props, context, dep)
         deactivate();
       }, 0);
     } else if (document.activeElement.isEqualNode(wrapper.value) && !isOpen.value) {
-      activate();
+      activate();    
     }
 
     setTimeout(() => {
@@ -2914,7 +2914,7 @@ function useKeyboard (props, context, dep)
   const preparePointer = () => {
     // When options are hidden and creating tags is allowed
     // no pointer will be set (because options are hidden).
-    // In such case we need to set the pointer manually to the
+    // In such case we need to set the pointer manually to the 
     // first option, which equals to the option created from
     // the search value.
     if (mode.value === 'tags' && !showOptions.value && createOption.value && searchable.value && !groupped.value) {
@@ -2993,7 +2993,7 @@ function useKeyboard (props, context, dep)
         if (addOptionOn.value.indexOf('enter') === -1 && createOption.value) {
           return
         }
-
+        
         preparePointer();
         selectPointer();
         break
@@ -3001,7 +3001,7 @@ function useKeyboard (props, context, dep)
       case ' ':
         if (!createOption.value && !searchable.value) {
           e.preventDefault();
-
+          
           preparePointer();
           selectPointer();
           return
@@ -3009,18 +3009,18 @@ function useKeyboard (props, context, dep)
 
         if (!createOption.value) {
           return false
-        }
+        } 
 
         if (addOptionOn.value.indexOf('space') === -1 && createOption.value) {
           return
         }
 
         e.preventDefault();
-
+        
         preparePointer();
         selectPointer();
         break
-
+      
       case 'Tab':
       case ';':
       case ',':
@@ -3048,7 +3048,7 @@ function useKeyboard (props, context, dep)
         if (!isOpen.value) {
           open();
         }
-
+        
         backwardPointer();
         break
 
@@ -3091,7 +3091,7 @@ function useKeyboard (props, context, dep)
         }
 
         e.preventDefault();
-
+        
         /* istanbul ignore else */
         if (tagList.length > activeIndex + 1) {
           tagList[activeIndex+1].focus();
@@ -3102,7 +3102,7 @@ function useKeyboard (props, context, dep)
         else if (!searchable.value) {
           wrapper.value.focus();
         }
-
+        
         break
     }
   };
@@ -3119,7 +3119,7 @@ function useKeyboard (props, context, dep)
 }
 
 function useClasses (props, context, dependencies)
-{const {
+{const { 
     classes: classes_, disabled, openDirection, showOptions
   } = (0,vue__WEBPACK_IMPORTED_MODULE_0__.toRefs)(props);
 
@@ -3464,14 +3464,14 @@ function useA11y (props, context, dep)
 
   const arias = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(() => {
     let arias = { ...aria.value };
-
+    
     // Need to add manually because focusing
     // the input won't read the selected value
     if (searchable.value) {
       arias['aria-labelledby'] = arias['aria-labelledby']
         ? `${ariaAssist.value} ${arias['aria-labelledby']}`
         : ariaAssist.value;
-
+      
       if (ariaLabel.value && arias['aria-label']) {
         arias['aria-label'] = `${ariaLabel.value}, ${arias['aria-label']}`;
       }
@@ -3600,14 +3600,14 @@ function resolveDeps (props, context, features, deps = {}) {
     }
 
   });
-
+  
   return deps
 }
 
 var script = {
     name: 'Multiselect',
     emits: [
-      'paste', 'open', 'close', 'select', 'deselect',
+      'paste', 'open', 'close', 'select', 'deselect', 
       'input', 'search-change', 'tag', 'option', 'update:modelValue',
       'change', 'clear', 'keydown', 'keyup', 'max', 'create',
     ],
@@ -3926,7 +3926,7 @@ var script = {
       },
     },
     setup(props, context)
-    {
+    { 
       return resolveDeps(props, context, [
         useI18n,
         useValue,
