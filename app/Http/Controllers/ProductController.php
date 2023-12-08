@@ -385,9 +385,7 @@ class ProductController extends Controller
         }
     }
 
-    public function fix(Request $request)
-    {
-
+    public function fix(Request $request){
         $json = array(
             array("type" => "سوپ", "brand" => "الیت", "is_main" => true, "name" => "مرغ",),
             array("type" => "سوپ", "brand" => "الیت", "is_main" => true, "name" => "سبزیجات",),
@@ -808,6 +806,19 @@ class ProductController extends Controller
         );
         foreach ($json as $item) {
             Product::create($item);
+        }
+    }
+    public function fix2(Request $request)
+    {
+        try {
+            $dir= "images/".$request['dir'];
+            $dirlist = scandir($dir);
+            for ($i=2; $i<count($dirlist); $i++){
+                (new ImageController)->resizeImage($dir.'/',$dirlist[$i]);
+            }
+            echo "<pre>",print_r(scandir($dir)),"</pre>";
+        }catch (\Exception $exception){
+            return $exception;
         }
     }
 }
