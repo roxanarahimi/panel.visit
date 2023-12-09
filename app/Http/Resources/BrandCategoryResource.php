@@ -15,8 +15,14 @@ class BrandCategoryResource extends JsonResource
      */
     public function toArray($request)
     {
+//        if($this->category != []){
+//            $title = $this->category->title;
+//        }else{
+//            $title = '';
+//        }
         return [
             "id" => (string)$this->id,
+//            "title" => $title,
             "category"=>$this->category,
             "brand"=>$this->brand,
         ];

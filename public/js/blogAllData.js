@@ -6141,7 +6141,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.date_cell {\n  direction: ltr !important;\n  text-align: right !important;\n}\n.text_cell {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 30ch;\n}\n.active_cell {\n  width: 60px;\n  text-align: center;\n}\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.date_cell {\r\n  direction: ltr !important;\r\n  text-align: right !important;\n}\n.text_cell {\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  max-width: 30ch;\n}\n.active_cell {\r\n  width: 60px;\r\n  text-align: center;\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

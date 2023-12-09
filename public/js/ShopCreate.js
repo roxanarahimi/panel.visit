@@ -671,7 +671,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nspan i {\n    cursor: pointer;\n}\n.en {\n    direction: ltr !important;\n    text-align: left !important;\n}\n.multiselect-tags-search{\n    background-color: transparent !important;\n}\n.multiselect-tag{\n    background-color: #0d6efd !important;\n}\n.multiselect.is-active\n{\n    box-shadow: none !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nspan i {\r\n    cursor: pointer;\n}\n.en {\r\n    direction: ltr !important;\r\n    text-align: left !important;\n}\n.multiselect-tags-search{\r\n    background-color: transparent !important;\n}\n.multiselect-tag{\r\n    background-color: #0d6efd !important;\n}\n.multiselect.is-active\r\n{\r\n    box-shadow: none !important;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

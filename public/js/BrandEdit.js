@@ -121,57 +121,46 @@ __webpack_require__.r(__webpack_exports__);
         "stock": ""
       }],
       images: [],
-      value: [],
-      allbrands: []
+      value: []
     };
   },
   created: function created() {
     this.loadCategories();
-    this.loadbrand();
-    this.loadbrands();
+    this.loadBrand();
   },
   methods: {
-    loadbrand: function loadbrand() {
+    loadBrand: function loadBrand() {
       var _this = this;
 
       axios.get('/api/panel/brand/' + this.id).then(function (response) {
         console.log(response.data);
         _this.data = response.data;
-
-        if (_this.data.sizes && _this.data.sizes.length) {
-          _this.sizes = _this.data.sizes;
-        }
-
-        if (_this.data.images) {
-          _this.images = _this.data.images;
-        }
       }).then(function () {
         _this.isDefined = true;
       }).then(function () {
-        _this.value = _this.data.related_brands;
-      }).then(function () {
-        _this.watchTextAreas();
-      })["catch"]();
-    },
-    loadbrands: function loadbrands() {
-      var _this2 = this;
+        _this.value = _this.data.categories;
 
-      axios.get('/api/panel/brand?page=1&perPage=1000&search=').then(function (response) {
-        _this2.allbrands = response.data.data;
-        _this2.allbrands = _this2.allbrands.filter(function (item) {
-          return item.id != _this2.id;
+        _this.value.forEach(function (item) {
+          item.value = item.id;
+          item.title = item.category.title;
         });
+
+        console.log('vvv', _this.data, _this.value, _this.categories);
       })["catch"]();
     },
     loadCategories: function loadCategories() {
-      var _this3 = this;
+      var _this2 = this;
 
-      axios.get('/api/panel/category/brand?page=1&perPage=100000').then(function (response) {
-        _this3.categories = response.data.data;
+      axios.get('/api/panel/category/product?page=1&perPage=100000').then(function (response) {
+        _this2.categories = response.data.data;
+
+        _this2.categories.forEach(function (item) {
+          item.value = item.id;
+        });
       })["catch"]();
     },
     updateInfo: function updateInfo() {
-      var _this4 = this;
+      var _this3 = this;
 
       this.errors = [];
       var emptyFieldsCount = 0;
@@ -186,36 +175,19 @@ __webpack_require__.r(__webpack_exports__);
           element.nextSibling.innerHTML = "";
         }
       });
+      console.log('xxx', this.data, this.value, this.categories);
 
       if (emptyFieldsCount === 0) {
-        var selectedbrands = [];
-        this.value.forEach(function (element) {
-          selectedbrands.push(element.value);
-        });
         axios.post('/api/panel/brand/' + this.$route.params.id, {
-          // image: document.getElementById('Image_index_code').value,
-          id: this.$route.params.id,
-          image: document.getElementById('Image__code').value,
           title: document.getElementById('title').value,
-          subTitle: document.getElementById('subTitle').value,
-          title_en: document.getElementById('title_en').value,
-          flavor: document.getElementById('flavor').value,
-          flavor_en: document.getElementById('flavor_en').value,
-          // ingredients: document.getElementById('ingredients').value,
-          brand_category_id: document.getElementById('category').value,
-          text: document.getElementById('text').value,
-          color: document.getElementById('color').value,
-          index: document.getElementById('index').value,
-          // features: features,
-          link: document.getElementById('link').value,
-          related_brands: selectedbrands
+          categories: this.value
         }).then(function (response) {
           console.log('res', response);
 
           if (response.status === 200) {
             setTimeout(function () {
-              _this4.$router.push({
-                path: '/panel/brand/' + _this4.id
+              _this3.$router.push({
+                path: '/panel/brand/' + _this3.id
               });
             }, 1000);
           }
@@ -227,7 +199,7 @@ __webpack_require__.r(__webpack_exports__);
             var errorList = Array(error.response.data);
 
             for (var i = 0; i < errorList.length; i++) {
-              _this4.errors = errorList[i];
+              _this3.errors = errorList[i];
             }
           } else if (error.response.status === 500) {
             if (error.response.data.message.includes("SQLSTATE")) {
@@ -262,41 +234,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     updateData: function updateData() {
       this.data.title = document.getElementById('title').value;
-      this.data.title_en = document.getElementById('title_en').value;
-      this.data.flavor = document.getElementById('flavor').value;
-      this.data.flavor_en = document.getElementById('flavor_en').value;
-      this.data.text = document.getElementById('text').value;
-      this.data.brand_category_id = document.getElementById('category').value;
-      this.data.color = document.getElementById('color').value;
-      this.data.index = document.getElementById('index').value;
-      this.data.link = document.getElementById('link').value;
-    },
-    watchTextAreas: function watchTextAreas() {
-      var txt = document.querySelector("#text");
-      txt.setAttribute("style", "height:" + (txt.scrollHeight + 20) + "px;overflow-y:hidden;");
-      txt.addEventListener("input", changeHeight, false);
-
-      function changeHeight() {
-        this.style.height = "auto";
-        this.style.height = this.scrollHeight + "px";
-      }
-    },
-    addFeature: function addFeature() {
-      this.features.push('{"label": "", "value": "", "unit": ""}');
-    },
-    removeFeature: function removeFeature(index) {
-      this.features.splice(index, 1);
-    },
-    updateFeatures: function updateFeatures() {
-      this.features = [];
-
-      for (var i = 0; i < document.getElementsByName('featureLabel').length; i++) {
-        this.features.push({
-          "label": document.getElementsByName('featureLabel')[i].value.toString(),
-          "value": document.getElementsByName('featureValue')[i].value.toString(),
-          "unit": document.getElementsByName('featureUnit')[i].value.toString()
-        });
-      }
     }
   }
 });
@@ -478,7 +415,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return $data.value = $event;
         }),
         mode: 'tags',
-        options: $data.allbrands,
+        options: $data.categories,
         object: true,
         label: "title",
         searchable: true,
@@ -496,7 +433,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       }, 8
       /* PROPS */
-      , ["onClick"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                        <button id=\"submit\" class=\"btn btn-primary d-flex justify-content-between\" @click.prevent=\"updateInfo\" type=\"submit\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                             ویرایش <loader-sm class=\"loader-sm d-none\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                        </button>")])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])];
+      , ["onClick"])])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])];
     }),
     _: 1
     /* STABLE */

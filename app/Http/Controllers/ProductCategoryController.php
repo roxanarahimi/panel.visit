@@ -15,7 +15,7 @@ class ProductCategoryController extends Controller
     {
         try {
             $perPage = $request['perPage'];
-            $data = ProductCategory::orderByDesc('id')->paginate($perPage);
+            $data = ProductCategory::orderBy('id')->paginate($perPage);
             $pages_count = ceil($data->total()/$perPage);
             $labels = [];
             for ($i=1; $i <= $pages_count; $i++){

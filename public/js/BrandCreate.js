@@ -131,13 +131,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         "stock": ""
       }],
       images: [['', '']],
-      value: [],
-      allProducts: []
+      value: []
     };
   },
   mounted: function mounted() {
     this.loadCategories();
-    this.loadProducts();
   },
   methods: {
     loadCategories: function loadCategories() {
@@ -151,6 +149,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context.next = 2;
                 return axios.get('/api/panel/category/product?page=1&perPage=100000').then(function (response) {
                   _this.categories = response.data.data;
+
+                  _this.categories.forEach(function (item) {
+                    item.value = item.id;
+                  });
                 })["catch"]();
 
               case 2:
@@ -161,23 +163,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee);
       }))();
     },
-    loadProducts: function loadProducts() {
+    createInfo: function createInfo() {
       var _this2 = this;
 
-      axios.get('/api/panel/product?page=1&perPage=1000&search=').then(function (response) {
-        _this2.allProducts = response.data.data;
-      })["catch"]();
-    },
-    createInfo: function createInfo() {
-      var _this3 = this;
-
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5() {
-        var emptyFieldsCount, req, selectedCategories;
+        var emptyFieldsCount, req;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                _this3.errors = [];
+                _this2.errors = [];
                 emptyFieldsCount = 0;
                 req = document.querySelectorAll('[required]');
                 req.forEach(function (element) {
@@ -192,45 +187,35 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 });
 
                 if (!(emptyFieldsCount === 0)) {
-                  _context5.next = 9;
+                  _context5.next = 7;
                   break;
                 }
 
-                selectedCategories = [];
-
-                _this3.value.forEach(function (element) {
-                  selectedCategories.push(element.value);
-                });
-
-                _context5.next = 9;
-                return axios.post('/api/panel/product', {
+                _context5.next = 7;
+                return axios.post('/api/panel/brand', {
                   title: document.getElementById('title').value,
-                  categories: selectedCategories
+                  categories: _this2.value
                 }).then(function (response) {
                   console.log(response.data);
 
                   if (response.status === 201 || response.status === 200) {
                     setTimeout(function () {
-                      _this3.$router.push({
-                        path: '/panel/products'
+                      _this2.$router.push({
+                        path: '/panel/brands'
                       });
                     }, 1000);
                     console.log(response);
                   }
                 })["catch"](function (error) {
-                  // console.log(error);
-                  // console.log(error.message);
-                  // console.log(error.response.data);
                   if (error.status === 422) {
                     var errorList = Array(error.response.data); // console.log(error.response.data);
 
                     // console.log(error.response.data);
                     for (var i = 0; i < errorList.length; i++) {
-                      //  console.log('i',errorList[i]);
-                      _this3.errors = errorList[i];
+                      _this2.errors = errorList[i];
                     }
 
-                    console.log(_this3.errors.toString());
+                    console.log(_this2.errors.toString());
                   } else if (error.status === 500) {
                     if (error.data.message.includes("SQLSTATE")) {
                       var showAlertSql = /*#__PURE__*/function () {
@@ -312,101 +297,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-              case 9:
+              case 7:
                 if (error && error.status && error.status === 401) {
                   window.location = '/panel/login';
                   _App__WEBPACK_IMPORTED_MODULE_2__["default"].methods.logout();
                 }
 
-              case 10:
+              case 8:
               case "end":
                 return _context5.stop();
             }
           }
         }, _callee5);
       }))();
-    },
-    watchTextAreas: function watchTextAreas() {
-      var txt = document.querySelector("#text");
-      txt.setAttribute("style", "height:" + (txt.scrollHeight + 20) + "px;overflow-y:hidden;");
-      txt.addEventListener("input", changeHeight, false);
-
-      function changeHeight() {
-        this.style.height = "auto";
-        this.style.height = this.scrollHeight + "px";
-      }
-    },
-    addFeature: function addFeature() {
-      this.features.push('{"label": "", "value": "", "unit": ""}');
-    },
-    removeFeature: function removeFeature(index) {
-      this.features.splice(index, 1);
-    },
-    updateFeatures: function updateFeatures() {
-      this.features = [];
-
-      for (var i = 0; i < document.getElementsByName('featureLabel').length; i++) {
-        this.features.push({
-          "label": document.getElementsByName('featureLabel')[i].value.toString(),
-          "value": document.getElementsByName('featureValue')[i].value.toString(),
-          "unit": document.getElementsByName('featureUnit')[i].value.toString()
-        });
-      }
-    },
-    addSize: function addSize() {
-      this.sizes.push('{}');
-    },
-    removeSize: function removeSize(index) {
-      this.sizes.splice(index, 1);
-    },
-    updateSizes: function updateSizes() {
-      var _this4 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee6() {
-        var a, i;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee6$(_context6) {
-          while (1) {
-            switch (_context6.prev = _context6.next) {
-              case 0:
-                a = [];
-                i = 0;
-
-              case 2:
-                if (!(i < document.getElementsByName('size').length)) {
-                  _context6.next = 8;
-                  break;
-                }
-
-                _context6.next = 5;
-                return a.push({
-                  "size": document.getElementsByName('size')[i].value.toString(),
-                  "dimensions": document.getElementsByName('dimensions')[i].value.toString(),
-                  "color_name": document.getElementsByName('color_name')[i].value.toString(),
-                  "color_code": document.getElementsByName('color_code')[i].value.toString(),
-                  "stock": document.getElementsByName('stock')[i].value
-                });
-
-              case 5:
-                i++;
-                _context6.next = 2;
-                break;
-
-              case 8:
-                _this4.sizes = a;
-
-              case 9:
-              case "end":
-                return _context6.stop();
-            }
-          }
-        }, _callee6);
-      }))();
-    },
-    removeImage: function removeImage(index) {
-      this.images.splice(index, 1);
-    },
-    addImage: function addImage() {
-      this.images.push(['', '']);
     }
   }
 });
@@ -581,7 +484,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           return _ctx.value = $event;
         }),
         mode: 'tags',
-        options: _ctx.allProducts,
+        options: _ctx.categories,
         object: true,
         label: "title",
         searchable: true,

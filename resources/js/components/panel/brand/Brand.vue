@@ -1,12 +1,11 @@
 <template>
     <transition name="route" mode="out-in" appear>
         <section class="" style="text-align: justify">
-            <div class="row " v-if="data.id">
+            <div class="row " v-if="data">
                 <div class="col-12 ">
                     <div class="row px-3 ">
                         <div class="col-12 mb-3 ">
                             <div class="d-inline-block mt-5">
-
                                 <h3 class="mb-2 fw-bold d-block">{{ data.title }}</h3>
                             </div>
                             <router-link :to="'/panel/edit/brand/'+data.id" class="text-dark">
@@ -56,57 +55,20 @@ export default {
             images: [],
         }
     },
-    mounted() {
-        this.loadbrand();
+    created() {
+        this.loadBrand();
 
     },
     methods: {
-        async loadbrand() {
-
-            await axios.get('/api/panel/brand/' + this.id)
+         loadBrand() {
+             axios.get('/api/panel/brand/' + this.id)
                 .then((response) => {
                     this.data = response.data;
-                    // if (document.querySelector('#text')) {
-                    //     document.querySelector('#text').innerText = this.data.text;
-                    // }
-                    if (this.data.features) {
-                        this.features = [];
-                        for (let i = 0; i < JSON.parse(this.data.features).length; i++) {
-                            this.features.push(JSON.parse(this.data.features)[i]);
-                        }
-                    }
-                    if (this.data.images) {
-                        for (let i = 0; i < this.data.images.length; i++) {
-                            this.images.push([i, this.data.images[i]]);
-                        }
-                    }
+
+                    console.log(this.data)
                 });
 
         },
-        async updateOrder() {
-
-            let newOrder = await [];
-            newOrder = await document.querySelectorAll('[name = "order"]');
-            await console.log('nnn', newOrder);
-            let list = '';
-            for (let i = 0; i < newOrder.length; i++) {
-                list += newOrder[i].value + ',';
-            }
-            // },1000);
-
-            axios.post('/api/panel/images/reorder/brand/' + this.id, {images: list})
-                .then((response) => {
-                    console.log('res', response);
-                    if (response.status === 200) {
-                        this.loadbrand();
-                    }
-                })
-                .catch((error) => {
-                    console.log(error);
-                });
-
-
-        }
 
     }
 }

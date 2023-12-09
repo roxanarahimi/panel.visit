@@ -204,14 +204,16 @@ const routes = [
         path: "/panel/edit/brand/:id",
         name: "BrandEdit",
         component: () => import(/* webpackChunkName: "BrandEdit" */ '../js/components/panel/brand/BrandEdit'),
-
+        props: true,
         params: true
     },
     {
         path: "/panel/brand/:id",
         name: "Brand",
         component: () => import(/* webpackChunkName: "Brand" */ '../js/components/panel/brand/Brand'),
-        params: true
+        params: true,
+        props: true
+
     },
     {
         path: "/panel/cities",
@@ -227,15 +229,15 @@ const routes = [
         params: true
     },
     {
-        path: "/panel/edit/brand/:id",
-        name: "BrandEdit",
+        path: "/panel/edit/city/:id",
+        name: "CityEdit",
         component: () => import(/* webpackChunkName: "CityEdit" */ '../js/components/panel/city/CityEdit'),
 
         params: true
     },
     {
         path: "/panel/city/:id",
-        name: "Brand",
+        name: "City",
         component: () => import(/* webpackChunkName: "City" */ '../js/components/panel/city/City'),
         params: true
     },

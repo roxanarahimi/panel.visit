@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Brand;
+use App\Models\BrandCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Resources\BrandResource;
@@ -69,12 +70,12 @@ class BrandController extends Controller
         }
         try {
             $data = Brand::create($request->except('image'));
-            if ($request['image']) {
-                $name = 'Brand_' . $data['id'] . '_' . uniqid() . '.jpg';
-                $image_path = (new ImageController)->uploadImage($request['image'], $name, 'images/Brands/');
-                $data->update(['image' => '/' . $image_path]);
-                (new ImageController)->resizeImage('images/Brands/',$name);
 
+            foreach($request['categories'] as $item){
+                BrandCategory::create([
+                    "brand_id" => $data['id'],
+                    "product_category_id" => $item['id']
+                ]);
             }
 
             return response(new BrandResource($data), 201);
@@ -102,21 +103,14 @@ class BrandController extends Controller
         try {
             $brand->update($request->except('image'));
 
-            if ($request['image']) {
-                $name = 'Brand_' . $brand['id'] . '_' . uniqid() . '.jpg';
-                $image_path = (new ImageController)->uploadImage($request['image'], $name, 'images/Brands/');
+            $old = BrandCategory::where('brand_id', $brand['id'])->get();
+            foreach($old as $item){ $item->delete();}
 
-                if ($brand['image']){
-                    $file_to_delete = ltrim($brand['image'], $brand['image'][0]); //remove '/' from file name start
-                    $file_to_delete_thumb = ltrim(str_replace('.png','_thumb.png',$file_to_delete));
-                    if (file_exists($file_to_delete)){  unlink($file_to_delete);}
-                    if (file_exists($file_to_delete_thumb)){  unlink($file_to_delete_thumb);}
-                }
-
-                $brand->update(['image' => '/' . $image_path]);
-                (new ImageController)->resizeImage('images/Brands/',$name);
-
-
+            foreach($request['categories'] as $item){
+                BrandCategory::create([
+                    "brand_id" => $brand['id'],
+                    "product_category_id" => $item['id']
+                ]);
             }
 
             return response(new BrandResource($brand), 200);
@@ -130,12 +124,14 @@ class BrandController extends Controller
     {
         $data = Brand::where('id', $id)->first();
         try {
-            if ($data['image']){
-                $file_to_delete = ltrim($data['image'], $data['image'][0]); //remove '/' from file name start
-                $file_to_delete_thumb = ltrim(str_replace('.png','_thumb.png',$file_to_delete));
-                if (file_exists($file_to_delete)){  unlink($file_to_delete);}
-                if (file_exists($file_to_delete_thumb)){  unlink($file_to_delete_thumb);}
+
+            $old = BrandCategory::where('brand_id', $id)->get();
+            if($old) {
+                foreach ($old as $item) {
+                    $item->delete();
+                }
             }
+
             $data->delete();
             return response('Brand deleted', 200);
         } catch (\Exception $exception) {

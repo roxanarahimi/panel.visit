@@ -24,7 +24,7 @@
                                         <Multiselect
                                             v-model="value"
                                             :mode="'tags'"
-                                            :options="allbrands"
+                                            :options="categories"
                                             :object="true"
                                             label="title"
                                             :searchable="true"
@@ -37,9 +37,7 @@
                                         <BtnSubmit @click.prevent="updateInfo">
                                             ویرایش
                                         </BtnSubmit>
-                                        <!--                                        <button id="submit" class="btn btn-primary d-flex justify-content-between" @click.prevent="updateInfo" type="submit">-->
-                                        <!--                                             ویرایش <loader-sm class="loader-sm d-none" />-->
-                                        <!--                                        </button>-->
+
                                     </div>
                                 </div>
 
@@ -81,54 +79,45 @@ export default {
             images: [],
 
             value: [],
-            allbrands: []
         }
     },
 
     created() {
         this.loadCategories();
-        this.loadbrand();
-        this.loadbrands();
+        this.loadBrand();
     },
 
     methods: {
-        loadbrand() {
+        loadBrand() {
 
             axios.get('/api/panel/brand/' + this.id)
                 .then((response) => {
                     console.log(response.data);
                     this.data = response.data;
-                    if (this.data.sizes && this.data.sizes.length) {
-                        this.sizes = this.data.sizes;
-                    }
-                    if (this.data.images) {
-                        this.images = this.data.images;
-                    }
                 })
                 .then(() => {
                     this.isDefined = true;
                 })
                 .then(() => {
-                    this.value = this.data.related_brands;
-                })
-                .then(() => {
-                    this.watchTextAreas();
+                    this.value = this.data.categories;
+                    this.value.forEach((item)=>{
+                        item.value = item.id
+                        item.title = item.category.title
+                    })
+                    console.log('vvv',this.data, this.value, this.categories)
+
                 })
                 .catch();
-        },
-        loadbrands() {
 
-            axios.get('/api/panel/brand?page=1&perPage=1000&search=')
-                .then((response) => {
-                    this.allbrands = response.data.data;
-                    this.allbrands = this.allbrands.filter((item)=>item.id != this.id);
-                })
-                .catch()
+
         },
         loadCategories() {
-            axios.get('/api/panel/category/brand?page=1&perPage=100000')
+             axios.get('/api/panel/category/product?page=1&perPage=100000')
                 .then((response) => {
                     this.categories = response.data.data;
+                    this.categories.forEach((item)=>{
+                        item.value = item.id
+                    })
                 })
                 .catch();
         },
@@ -149,31 +138,14 @@ export default {
                     element.nextSibling.innerHTML = "";
                 }
             });
+            console.log('xxx',this.data, this.value, this.categories)
 
             if (emptyFieldsCount === 0) {
-                let selectedbrands = [];
-                    this.value.forEach((element)=>{
-                        selectedbrands.push(element.value)
-                    });
 
                 axios.post('/api/panel/brand/' + this.$route.params.id,
                     {
-                        // image: document.getElementById('Image_index_code').value,
-                        id: this.$route.params.id,
-                        image: document.getElementById('Image__code').value,
                         title: document.getElementById('title').value,
-                        subTitle: document.getElementById('subTitle').value,
-                        title_en: document.getElementById('title_en').value,
-                        flavor: document.getElementById('flavor').value,
-                        flavor_en: document.getElementById('flavor_en').value,
-                        // ingredients: document.getElementById('ingredients').value,
-                        brand_category_id: document.getElementById('category').value,
-                        text: document.getElementById('text').value,
-                        color: document.getElementById('color').value,
-                        index: document.getElementById('index').value,
-                        // features: features,
-                        link: document.getElementById('link').value,
-                        related_brands: selectedbrands,
+                        categories: this.value,
                     })
                     .then((response) => {
                         console.log('res', response);
@@ -231,43 +203,8 @@ export default {
 
         updateData() {
             this.data.title = document.getElementById('title').value;
-            this.data.title_en = document.getElementById('title_en').value;
-            this.data.flavor = document.getElementById('flavor').value;
-            this.data.flavor_en = document.getElementById('flavor_en').value;
-            this.data.text = document.getElementById('text').value;
-            this.data.brand_category_id = document.getElementById('category').value;
-            this.data.color = document.getElementById('color').value;
-            this.data.index = document.getElementById('index').value;
-            this.data.link = document.getElementById('link').value;
         },
-        watchTextAreas() {
-            let txt = document.querySelector("#text");
-            txt.setAttribute("style", "height:" + (txt.scrollHeight + 20) + "px;overflow-y:hidden;");
-            txt.addEventListener("input", changeHeight, false);
 
-            function changeHeight() {
-                this.style.height = "auto";
-                this.style.height = (this.scrollHeight) + "px";
-            }
-        },
-        addFeature() {
-            this.features.push('{"label": "", "value": "", "unit": ""}');
-        },
-        removeFeature(index) {
-
-            this.features.splice(index, 1)
-        },
-        updateFeatures() {
-            this.features = [];
-            for (let i = 0; i < document.getElementsByName('featureLabel').length; i++) {
-                this.features.push({
-                    "label": document.getElementsByName('featureLabel')[i].value.toString(),
-                    "value": document.getElementsByName('featureValue')[i].value.toString(),
-                    "unit": document.getElementsByName('featureUnit')[i].value.toString()
-                });
-            }
-
-        },
 
     }
 }
